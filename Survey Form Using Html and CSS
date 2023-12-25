@@ -1,0 +1,118 @@
+<!DOCTYPEhtml>
+<html lang="en">
+  <head>
+    <title>Surey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+  
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+      <form id="survey-form">
+        <div class="input-element">
+          <label id="name-label">Name</label><input placeholder="Enter your name" id="name" type="text"  required></input>
+        <label id="email-label">Email </label> <input placeholder="Enter your Email" id="email" type="email" required ></input>
+        <label id="number-label">Age(optional) </label> <input placeholder="age" type="number" id="number" min="14" max="120" required ></input>
+       <label id="role">Which option best describes your current role?
+       <select id="dropdown">
+         <option value="">select current role</option>
+         <option value="1">Student</option>
+         <option value="2">Full time job</option>
+         <option value="3">Full time learner</option>
+         <option value="4">others</option>
+       </select>
+       </label>
+       <label>Would you recommend freeCodeCamp to a friend?</label>
+       <label for="Definately"><input name="recommend" id="Definately" value="1"type="radio"></input> Definately</label>
+          <label for="maybe"><input value="2" name="recommend" id="maybe" type="radio"></input>Maybe</label>
+          <label for="not sure"> <input value="3"name="recommend" id="not sure" type="radio"></input>Not sure</label>
+          <label for=" feature">What is your favorite feature of freeCodeCamp?
+            <select id="dropdown">
+              <option>Select an option</option>
+              <option>challenges</option>
+              <option>community</option>
+              <option>projects</option>
+            </select>
+          </label>
+          <label>What would you like to see improved? (Check all that apply)</label>
+            <input type="checkbox" name="challenges"
+            value="1"><label>challenges</label>
+            <input type="checkbox" name="challenges"
+            value="2"><label>wiki</label>
+            <input type="checkbox" name="challenges"
+            value="3"><label>Videos</label>
+            <label >Any comments or suggestions?
+              <textarea rows= "3" id="comment" placeholder="Enter your comment hear"></textarea>
+              <input id="submit" type="submit" value="submit"
+              
+            </label>
+          </label>
+       </label>
+        </div>
+       </div>
+        
+      </form>
+  </body>
+</html>
+
+//CSS//
+body{
+  background-image:linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg); 
+  width: 100vw;
+height: 100vh;
+  margin: 0 auto;
+
+}
+div{
+    background-color: rgba(27, 27, 50, 0.8);
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 0auto;
+    height: 250%;
+     }
+    p{ text-align: center;
+       font-style: italic;
+      font-size: 1.125rem;
+      margin: 0 auto;}
+      h1 {
+    display: block;
+    font-size: 2em;
+   
+}
+label{display: block;
+ font-weight: 100px;
+ color: white;
+ margin:  0 auto;
+ height: 40px;
+ color: white;
+ font: Sans-Serif;
+ font-weight: bold;
+ font-size: 20px;
+ width: 300px;
+ }
+ input,select{display: block;
+ width: 90%;
+ height: 20px;
+ border-radius: 5px;
+ margin-top: 0 auto;
+ }
+ label,input{margin: 15px;
+ }
+ input[type="radio"], input[type="checkbox"]{
+   height: 20px;
+   width:10px;
+   display: inline-flex;
+   align-items: center;
+   
+   }
+ input[type="submit"]{display: block;
+ width: 55%;
+ margin:0 auto;
+ height: 2em;
+ font-size: 1.1rem;
+ background-color: green;
+ border-color: white;
+ min-width: 300px;}
+
+
