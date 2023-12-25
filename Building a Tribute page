@@ -1,0 +1,39 @@
+<!Doctypehtml>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+ <link rel="stylesheet" href="styles.css">   
+    <title>Tribute page for Dr.Norman Borlaug</title>
+
+  </head>
+  <body>
+    <main id="main">
+      <h1 id="title">Dr. Norman Borlaug</h1>
+      <p>The man who saved a billion lives</p>
+      <figure id="img-div" >
+      <img id="image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute-page-main-image.jpg"  ></img>
+      <figcaption id="img-caption">Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger.</figcaption>
+      </figure>
+      <h2 id="tribute-info">A Great Man
+        <h3>Here's a time line of Dr. Borlaug's life:
+          <ul>
+            <li>1914 - Born in Cresco, Iowa</li>
+            <li>1933 - Leaves his family's farm to attend the University of Minnesota, thanks to a Depression era program known as the "National Youth Administration"</li>
+            <li>1935 - Has to stop school and save up more money. Works in the Civilian Conservation Corps, helping starving Americans. "I saw how food changed them", he said. "All of this left scars on me."</li>
+          </ul>
+        </h3>
+      </h2>
+      <a id="tribute-link" target="_blank" href="moreinfo"></a>
+    </main>
+  </body>
+</html>
+
+
+//CSS//
+img{display: block;}
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
